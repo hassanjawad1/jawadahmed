@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jawad Ahmed | AI, Data Scientist and Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f2fe, #ffffff);
+      color: #1e3a8a;
+      scroll-behavior: smooth;
+    }
+    header, section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background: #2849a4;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.5rem 2rem;
+      animation: fadeIn 2s ease;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #3b82f6;
+      margin: auto;
+      display: block;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.25rem; color: #cbd5e1; }
+    .btn {
+      padding: 0.7rem 1.5rem;
+      margin: 1rem 0.5rem;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #2563eb;
+      transform: scale(1.05);
+    }
+    .btn.active {
+      background: #1e3a8a;
+      color: white;
+      box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background: #3b82f6;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      border-radius: 5px;
+    }
+    .skills, .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .skill {
+      background: #e0e7ff;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    .project {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.1);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+    .project:hover { transform: translateY(-5px); }
+    .project h3 { margin-bottom: 0.5rem; color: #1e3a8a; }
+    .project a {
+      color: #2563eb;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    .contact-icons a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #1e3a8a;
+      transition: transform 0.3s;
+    }
+    .contact-icons a:hover { transform: scale(1.2); }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Jawad Ahmed" class="profile-pic" />
+    <h1>Jawad Ahmed</h1>
+    <h2>AI Engineer & Data Analyst | GenAI | MUET CSE'25</h2>
+    <p>Turning data into smart solutions. Engineering tomorrow with code.</p>
+    <a class="btn" href="E:\portfolio website\Jawad Ahmed Resume.pdf" download>Download Resume</a>
+    <button class="btn" onclick="scrollToContact()">Let's Connect</button>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>I am an AI and Data Science enthusiast with a passion for building smart systems that solve real-world problems. With a strong background as a Data Analyst, I excel at transforming raw data into actionable insights through advanced analytics and visualization. I've gained valuable experience at Verge Pvt Ltd as a Data Specialist Intern, and participated in various internships and hackathons, working with startups and student communities. Based in Karachi and Hyderabad, Pakistan, I thrive on innovation, collaboration, and lifelong learning.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="project">
+      <h3>Bachelor of Engineering in Computer Systems Engineering</h3>
+      <p>Mehran University of Engineering & Technology (2021 – 2025)</p>
+      <p>Focused on Computer Fundamentals with both Software and Hardware sides.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills & Tech Stack</h2>
+    <div class="skills">
+      <div class="skill">Python</div><div class="skill">Machine learning</div><div class="skill">Deep learning</div>
+      <div class="skill">NLP</div><div class="skill">Chatbots</div><div class="skill">Fast API</div>
+      <div class="skill">Power BI</div><div class="skill">Excel</div>
+      <div class="skill">SQL</div><div class="skill">ETL</div><div class="skill">Streamlit</div>
+      <div class="skill">HuggingFace</div><div class="skill">LLMs</div><div class="skill">EDA</div>
+      <div class="skill">Time Management</div><div class="skill">Team Player</div>
+      <div class="skill">Analytical</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="buttons">
+      <button data-filter="all" class="btn active">All Projects</button>
+      <button data-filter="ai" class="btn">AI Projects</button>
+      <button data-filter="analytics" class="btn">Data Analytics</button>
+    </div>
+    <div class="projects" id="projectContainer"></div>
+  </section>
+<section>
+  <h2 class="section-title">Experience</h2>
+  <div class="project">
+    <h3>Data Specialist Intern – Verge Pvt Ltd (Feb – May 2024)</h3>
+    <ul>
+      <li>Designed and built client dashboards using Power BI and Excel, increasing customer transparency and satisfaction.</li>
+      <li>Managed large datasets, ensuring accuracy through ETL processes and writing complex MySQL queries.</li>
+      <li>Regularly presented clear, data-driven reports to stakeholders, enhancing client trust and engagement.</li>
+      <li>Supported cross-functional teams with insights to improve customer service processes.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="project">
+    <h3>Data Analyst Intern – MUET Content Dev Team (Oct 2023 – Jan 2024)</h3>
+    <ul>
+      <li>Conducted data analysis for content strategy optimization, influencing key organizational decisions.</li>
+      <li>Collected and analyzed alumni business data for strategic planning.</li>
+      <li>Presented research findings through webinars and internal sessions to enhance team knowledge.</li>
+      <li>Specialized in exploratory data analysis, statistical insights, and impactful visualization techniques.</li>
+    </ul>
+  </div>
+  
+</section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <ul>
+      <li>IBM Data Analyst – Coursera</li>
+      <li>Big Data Analytics – Navttc</li>
+      <li>Data Science Fellowship – Bytewise</li>
+    </ul>
+  </section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-icons">
+    <!-- Gmail Icon using image -->
+    <a href="mailto:Jawadcomputer13@gmail.com" class="icon-link gmail">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vtphMtxRWfK6nO2CIbGfSETyEs79Dr6oPw&s" alt="Gmail" class="icon-img" />
+    </a>
+    <!-- GitHub Icon -->
+    <a href="https://github.com/hassanjawad1" target="_blank" class="icon-link github">
+      <!-- SVG GitHub Icon -->
+      <svg class="icon" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.996.108-.775.418-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.312.469-2.384 1.236-3.222-.124-.303-.535-1.526.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.295-1.23 3.295-1.23.653 1.65.242 2.873.118 3.176.77.838 1.235 1.91 1.235 3.222 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.106.823 2.229v3.301c0 .319.218.694.824.576C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" fill="#333"/>
+      </svg>
+    </a>
+    <!-- LinkedIn Icon -->
+    <a href="https://www.linkedin.com/in/jawad-ahmed-16130b220/" target="_blank" class="icon-link linkedin">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAbFBMVEUAfrv///8AfLoAcLXE2uopgbzI2OnR4u5GjsI0g73o8fcAdbcAbbPN3+30+PuQt9ebwNzh6/S80+ZalsZ9rtISgr0AZbBdnso0jMKkxN4AarJvpc6MsdTZ5/FpncqwzeN/qdBbkcRLlsd3oswcWK3cAAAFJElEQVR4nO2dbXOqOhCAkwUKJsqrFJUi1v7//3iDHE9rlQRPwshy9/nQmc7IwDNhIdkkC+MXEmCIgaS3YJe/KeCWgfRbJl+hdlE2q/wqkxXy1VdjiyyyXiZO0LsomyS+yIS4A6YHIOxk4u0CGkY1zTZWMplcQMOoppGZkkm9V1+HG7xUyZSLaBjVNCVn4v3VV+GKd8Hyhdxl6j7L2RJeMj0yYdVCQkYFTcV2y5HZsfLV1+COBakQxOyArqMNbAlPP+URBKvVKoCOV1+NFZJFxyRvhMg27bbYYdaR7LgX/JtNEqG1kcU+5rc0SYmyTwewbfg9/hlhdxtY8rtZerIanQ2w9LEL5+KIzEbdYwMqnU2EK25kMezCeYhKBoJMJ8Pb9auv8AlkonXhosbTNiCHgv9KjieDKDXR35NVaJrmoI+YDjzJHWl04S2WgbeszDLhGUnQeKlZRhyR3GdebpbhJyQy6w3JzJO1vyAZrzW7xF9IZMwdgG4NAZJHM+zMMj6aWYSDqZ/J+R5NmsYcNDGW+Ff3WbScu0w9AkxvmhRNw6im+dS7hJjS6ADacXOMaNTMulVpuhutPbz6+p5Dfg6PNn1MuZkL8vgo03xxQZbQ7JDF28N4aT1Ewf8XuUrFnUu4xZNkugHg+GuCpkkjpC5dMpAdE//qI9oT3omzDgBYRUW93W6rzyjAPKXZA9+8+lIIgiAI4ilAep637vA8KRG/yEAe5Hm7z/2N4i3fJ/VufcDZ8/MOUdrE8Y9+rPpHhGl0cD/CuLT/MA9SAPojbg+ANWuH8oxxWx7cZhggSH0d+7vTwU53RP4zAwLyrJ9myCq34RPoT/d2N3KGKNT8/sf2NoDCPGOS1YFDm6lkAKK7BXkP8St3jTORDMBpKE3yG5E6a5xpZICNa5Ye39VKsElkJBszv/hN42hT7BQyMhgz8fsTcXZiM4GMDHS/GLBxcqe5lwH2vIt6RrtYeexexjjl85jQQW/NucxhzBKWRzjYteha5uP0xDP5BmE/e+papv2XgOnZWE+fupa5z8CPJ52ZjBWN7Tq9OcnwxLLPOSuZJlqQDK+XJOMHC5LhdvVxZiZjV7tkZjJ2e1xmJsMXJWP13pxaJhaZEE/0Pa3qykwp07Tpx6k+1vUp2Y8d5IQ2y3Wmk8lPRSmvQPQ1bpwT2xSWmUomrFY3qVeQwdeoTNoMWyYN7vqMIKMxCSibQc00MvXD6QrYjbCx2RY2iczQPmI54libPsAUMvfzIFc8c4bA5tk8gUwz3FsEaXymtfOS0Q1KZGVKEthknNzL6MtcGlOENotc3ct8aCO4q+ynZTMnmUa/3wYYJpnW8NJbGxp2VjKm7cOmvaFzkslMe1RljUcmNPWtoMQj4xunWQ54ZMzvvHf942xOMubeiKEGwZxk9kYZw7N5RjIjSkMb9iDjkvEWJaMfBZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZAMyZDM/1amFRri+2XKEPmaAzLzljFPe0ZhsxkIum/oDvOg2ID+iBG1yp4+4zM6Wp4+YooTEgTxr2D5UOEISobo0z4GYMeq5chUDM/XPU3IhDkoTzcTvJwJm6oUs+JdMF4uJGig5MyulMuM8FIlk+GsJ/4bkJmSie1KU82FbvM94zxcQscaQI1wWTeWXUDUeEl8keGZo3rIL0QW3cbbTsZQ1wIBsLqkQS4yPMUdNgB9SYRehie4Zf58jvE/ha130LWQ03MAAAAASUVORK5CYII=" alt="LinkedIn" class="icon-img" />
+
+        <!-- <svg class="icon" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"> -->
+        <path d="M22.225 0H1.775C.796 0 0 .796 0 1.775v20.45C0 23.204.796 24 1.775 24h20.45C23.204 24 24 23.204 24 22.225V1.775C24 .796 23.204 0 22.225 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 8.4a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm14.4 12H16.8v-5.4c0-1.3-.025-2.975-1.8-2.975-1.8 0-2.075 1.4-2.075 2.85v5.525H9.6V9.6h3.45v1.477h.048c.481-.912 1.657-1.875 3.418-1.875 3.655 0 4.334 2.4 4.334 5.526v4.672z" fill="#333"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<style>
+  /* Style the icons container */
+  .contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Style each link */
+  .icon-link {
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+  }
+
+  /* Style the SVG icons */
+  .icon {
+    fill: #555;
+    width: 50px;
+    height: 50px;
+    transition: fill 0.3s, filter 0.3s, transform 0.3s;
+  }
+
+  /* Style for the image icons (like Gmail) */
+  .icon-img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  /* Hover effects for icons */
+  .icon-link:hover .icon,
+  .icon-link:hover .icon-img {
+    filter: drop-shadow(0 0 8px currentColor);
+    transform: scale(1.2);
+  }
+
+  /* Optional: Different hover colors for each icon */
+  /* .icon-link.email:hover .icon-img { */
+    /* You can add a color overlay if needed, or just keep the shadow */
+  /* } */
+
+  .icon-link.github:hover .icon {
+    fill: #333; /* default color, can be customized */
+  }
+
+  .icon-link.linkedin:hover .icon {
+    fill: #0077b5;
+  }
+
+  /* For the Gmail image, you might want to add a hover effect */
+  .icon-link.gmail:hover .icon-img {
+    /* For example, add a glow or change brightness */
+    filter: drop-shadow(0 0 8px #d44638);
+    transform: scale(1.2);
+  }
+</style>  <script>
+    function scrollToContact() {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const projects = [
+      {
+        title: "Neural English to Sindhi Translator",
+        description: "Built an English–Sindhi translator using NMT and rule-based lookup.",
+        link: "https://github.com/hassanjawad1/AI-Projects/tree/main/English_to_Sindhi_Dictionary",
+        category: "ai",
+        image: "images/sindhi-trans.jpg"
+      },
+      {
+        title: "AI Chatbot Agents",
+        description: "Streamlit chatbot using Groq/OpenAI models with prompt tuning.",
+        link: "https://github.com/hassanjawad1/Gen-AI-Projects",
+        category: "ai",
+        image: "images/agentic-ai.jpg"
+      },
+      {
+        title: "Anime Movie Recommender using LLMs",
+        description: "Recommendation engine built with LLMs and Gradio.",
+        link: "https://github.com/hassanjawad1/AI-Projects/tree/main/Anime%20Movie%20Recommender%20using%20LLMs",
+        category: "ai",
+        image: "images/anime.jpg"
+      },
+      {
+        title: "AI Scientific Paper Summarizer",
+        description: "Summarizes research PDFs using HuggingFace models.",
+        link: "https://github.com/hassanjawad1/AI-Projects/tree/main/AI%20Scientific%20Paper%20Summarizer%20%26%20Explainer",
+        category: "ai",
+        image: "images/ui-image.jpg"
+      },
+      {
+        title: "Election Dashboard in Power BI",
+        description: "Election dashboard with graphs, KPIs, and slicers for provinces.",
+        link: "#",
+        category: "analytics",
+        image: "images/election1.jpg"
+      },
+      {
+        title: "Sales Dashboard in Power BI",
+        description: "Sales dashboard with slicers, graphs, and KPIs.",
+        link: "#",
+        category: "analytics",
+        image: "images/sales dashboard.jpg"
+      },
+      {
+        title: "HR Dashboard in Power BI",
+        description: "HR dashboard with slicers, graphs, and KPIs.",
+        link: "#",
+        category: "analytics",
+        image: "images/hr-dash.jpg"
+      },
+      {
+        title: "Maven Pizza Dashboard in Power BI",
+        description: "Pizza sales dashboard for Maven Analytics challenge.",
+        link: "#",
+        category: "analytics",
+        image: "images/pizza-dash.jpg"
+      },
+    //   {
+    //     title: "Mobile Company SQL Project",
+    //     description: "Database for mobile company: customers, phones, and transactions.",
+    //     link: "#",
+    //     category: "analytics",
+    //     // image: "images/sql-mobile.jpg"
+    //   }
+    ];
+
+    const container = document.getElementById("projectContainer");
+
+    function renderProjects(filter = "all") {
+      container.innerHTML = "";
+
+      const filtered = filter === "all" 
+        ? projects 
+        : projects.filter(project => project.category === filter);
+
+      filtered.forEach(project => {
+        const card = document.createElement("div");
+        card.className = "project";
+
+        card.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" class="project-image" />
+          <h3>${project.title}</h3>
+          <p>${project.description}</p>
+          <a href="${project.link}" target="_blank">View Project</a>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    // Initial render
+    renderProjects();
+
+    const buttons = document.querySelectorAll(".buttons .btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderProjects(button.dataset.filter);
+      });
+    });
+  </script>
+  
+</body>
+</html>
